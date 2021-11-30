@@ -3,30 +3,17 @@
     <div id="header-top">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <p></p>
+                <div class="col-sm-3">
+                    <x-isite::logo name="logo1" imgClasses="header-logo-1" />
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="col-sm-9">
 
-    <div id="header-content">
-        <div class="container">
-            <div class="row">
-                <div class="menu-header col-xs-12">
-                    @include('partials.navigation')
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="header-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    @include('isearch::forms.search-int')
-                    @include('partials.social')
-
+                    <x-isite::menu
+                            id="mainMenu"
+                            :withHome="false"
+                            layout="category-menu-layout-2"
+                            menuBefore="main"/>
+                    @livewire('isearch::search', ["layout" => "search-layout-1"])
                 </div>
             </div>
         </div>
