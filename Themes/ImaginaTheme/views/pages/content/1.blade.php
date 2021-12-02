@@ -1,6 +1,7 @@
 <div class="home page page-{{$page->id}}" data-icontenttype="page" data-icontentid="{{$page->id}}">
     <div class="container">
         <div class="col-md-12">
+
             <x-isite::carousel.owl-carousel
                     id="servicesCarousel"
                     repository="Modules\Slider\Repositories\SlideRepository"
@@ -11,7 +12,7 @@
                     :withTitle="false"
                     :withViewMoreButton="true"
                     :autoplay="true"
-                    :dots="false"
+                    :dots="true"
                     :loop="true"
                     mediaImage="slideimage"
                     :responsive="[300 => ['items' =>  1],700 => ['items' =>  1], 1024 => ['items' => 1]]"/>
@@ -31,6 +32,7 @@
                     title="Nuestros"
                     subTitle="Productos"
                     mediaImage="slideimage"
+                    :navText="['<i class=\'fa fa-chevron-left\'></i>', '<i class=\'fa fa-chevron-right\'></i>']"
                     :responsive="[300 => ['items' =>  1],700 => ['items' =>  3], 1024 => ['items' => 3]]"/>
         </div>
         <div class="col-md-12">

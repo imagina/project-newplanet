@@ -16,6 +16,11 @@
                     @livewire('isearch::search', ["layout" => "search-layout-1"])
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <x-isite::social/>
+                </div>
+            </div>
         </div>
     </div>
 

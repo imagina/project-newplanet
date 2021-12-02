@@ -1,5 +1,5 @@
 <footer class="container">
-
+    <div class="row">
     <div class="col-md-12">
       <x-isite::carousel.owl-carousel
               id="servicesCarousel"
@@ -15,29 +15,47 @@
               title="Marcas"
               subTitle="Comerciales"
               mediaImage="slideimage"
-              :responsive="[300 => ['items' =>  2],700 => ['items' =>  4], 1024 => ['items' => 6]]" :carousel.owl-carousel></x-isite::carousel.owl-carousel>
+              :responsive="[300 => ['items' =>  2],700 => ['items' =>  4], 1024 => ['items' => 6]]"/>
       </div>
-
+    </div>
    <div class="row">
      <div class="col-md-4">
        <x-isite::logo name="logo1" imgClasses="header-logo-1" />
      </div>
      <div class="col-md-4">
-        <x-isite::logo name="logo1" imgClasses="header-logo-1" />
+         <div class="row">
+             <x-isite::contact.addresses/>
+         </div>
+         <div class="row">
+             <x-isite::contact.phones/>
+         </div>
+         <div class="row">
+             <x-isite::contact.emails/>
+         </div>
      </div>
-     <div class="col-md-4">
-        <x-isite::logo name="logo1" imgClasses="header-logo-1" />
-     </div>
+       <div class="col-md-4">
+           <div class="row">
+               <x-isite::contact.addresses :addresses="json_decode(setting('icustom::addresses',null,'[]'))" />
+           </div>
+           <div class="row">
+               <x-isite::contact.phones :phones="json_decode(setting('icustom::phones',null,'[]'))"/>
+           </div>
+           <div class="row">
+               <x-isite::contact.emails :emails="json_decode(setting('icustom::emails',null,'[]'))"/>
+           </div>
+       </div>
    </div>
 
 
       <div class="col-md-12">
-      <x-isite::menu
-              id="mainMenu"
-              :withHome="false"
-              layout="category-menu-layout-2"
-              menuBefore="footer-menu"/>
-       </div>
+          <div class="col-sm-9">
+
+              <x-isite::menu
+                      id="mainMenu"
+                      :withHome="false"
+                      layout="category-menu-layout-2"
+                      menuBefore="main"/>
+          </div>
 
     <div class="row">
     <div id="footer-bottom" class="row align-items-center mx-0">
