@@ -1,27 +1,19 @@
 <div class="home page page-{{$page->id}}" data-icontenttype="page" data-icontentid="{{$page->id}}">
     <div class="container">
         <div class="col-md-12">
-
-            <x-isite::carousel.owl-carousel
-                    id="servicesCarousel"
-                    repository="Modules\Slider\Repositories\SlideRepository"
-                    :params="['take' => 20,'filter' => ['order' => ['field' => 'created_at', 'way' => 'desc'],'sliderId' =>1]]"
-                    :margin="10"
-                    itemLayout="item-list-layout-1"
-                    :withSummary="false"
-                    :withTitle="false"
-                    :withViewMoreButton="true"
+            <x-slider::slider.owl
+                    id="1"
+                    :autoplayTimeout="3000"
+                    :margin="0"
+                    dotsStyle="circle"
                     :autoplay="true"
-                    :dots="true"
-                    :loop="true"
-                    mediaImage="slideimage"
-                    :responsive="[300 => ['items' =>  1],700 => ['items' =>  1], 1024 => ['items' => 1]]"/>
-        </div>
+                    :nav="true" />
+                   </div>
         <div class="col-md-12">
             <x-isite::carousel.owl-carousel
                     id="Service2Carousel"
                     repository="Modules\Slider\Repositories\SlideRepository"
-                    :params="['take' => 20,'filter' => ['order' => ['field' => 'created_at', 'way' => 'desc'],'sliderId' =>8]]"
+                    :params="['take' => 20,'filter' => ['order' => ['field' => 'created_at', 'way' => 'desc'],'categories' =>10]]"
                     :margin="4"
                     itemLayout="item-list-layout-1"
                     :withSummary="false"
@@ -39,7 +31,7 @@
             <x-isite::carousel.owl-carousel
                     id="Service3Carousel"
                     repository="Modules\Slider\Repositories\SlideRepository"
-                    :params="['take' => 20,'filter' => ['order' => ['field' => 'created_at', 'way' => 'desc'],'sliderId' =>9]]"
+                    :params="['take' => 20,'filter' => ['order' => ['field' => 'created_at', 'way' => 'desc'],'categories' =>11]]"
                     :margin="4"
                     itemLayout="item-list-layout-1"
                     :withSummary="true"

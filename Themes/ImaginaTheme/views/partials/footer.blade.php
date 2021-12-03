@@ -1,23 +1,23 @@
 <footer class="container">
     <div class="row">
     <div class="col-md-12">
-      <x-isite::carousel.owl-carousel
-              id="servicesCarousel"
-              repository="Modules\Slider\Repositories\SlideRepository"
-              :params="['take' => 20,'filter' => ['order' => ['field' => 'created_at', 'way' => 'desc'],'sliderId' =>6]]"
-              :margin="10"
-              itemLayout="item-list-layout-1"
-              :withSummary="false"
-              :withViewMoreButton="false"
-              :autoplay="false"
-              :dots="false"
-              :loop="true"
-              title="Marcas"
-              subTitle="Comerciales"
-              mediaImage="slideimage"
-              :responsive="[300 => ['items' =>  2],700 => ['items' =>  4], 1024 => ['items' => 6]]"/>
-      </div>
-    </div>
+            <x-isite::carousel.owl-carousel
+                    id="Service4Carousel"
+                    repository="Modules\Slider\Repositories\SlideRepository"
+                    :params="['take' => 20,'filter' => ['order' => ['field' => 'created_at', 'way' => 'desc'],'sliderId' =>6]]"
+                    :margin="4"
+                    itemLayout="item-list-layout-1"
+                    :withSummary="false"
+                    :withViewMoreButton="true"
+                    :autoplay="true"
+                    :dots="false"
+                    :loop="true"
+                    title="Marcas"
+                    subTitle="Comerciales"
+                    mediaImage="slideimage"
+                    :navText="['<i class=\'fa fa-chevron-left\'></i>', '<i class=\'fa fa-chevron-right\'></i>']"
+                    :responsive="[300 => ['items' =>  1],700 => ['items' =>  3], 1024 => ['items' => 6]]"/>
+         </div>
    <div class="row">
      <div class="col-md-4">
        <x-isite::logo name="logo1" imgClasses="header-logo-1" />
