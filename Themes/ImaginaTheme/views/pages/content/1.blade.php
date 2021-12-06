@@ -43,6 +43,8 @@
                     :navText="['<i class=\'fa fa-angle-left\'></i>','<i class=\'fa fa fa-angle-right\'></i>']"
                     :responsive="[300 => ['items' =>  1],700 => ['items' =>  2], 1024 => ['items' => 4]]"/>
         </div>
+
+
         <div class="row">
             <div class="col-md-12">
             </div>
