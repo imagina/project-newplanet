@@ -15,7 +15,6 @@
                     title="Marcas"
                     subTitle="Comerciales"
                     mediaImage="slideimage"
-                    :navText="['<i class=\'fa fa-chevron-left\'></i>', '<i class=\'fa fa-chevron-right\'></i>']"
                     :responsive="[300 => ['items' =>  1],700 => ['items' =>  3], 1024 => ['items' => 6]]"/>
          </div>
    <div class="row">
