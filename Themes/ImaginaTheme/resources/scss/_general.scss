@@ -1,0 +1,127 @@
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: $bluePrimary;
+        text-decoration: underline;
+    }
+
+    #Service4Carousel .container .row .col-12 {
+        .title-section{
+            .title{
+                font-size: 1rem;
+            }
+            .subtitle{
+                font-size: 2rem;
+                color: $bluePrimary;
+            }
+        }
+
+        .owl-carousel {
+            .owl-stage-outer .owl-stage .owl-item .item-layout .card .row .item-title{
+                display: none;
+            }
+            .owl-nav {
+                font-size: 20px;
+                color: $gray-400;
+                .owl-prev {
+                    float: left;
+                    margin-top: -5rem;
+                    margin-left: -1rem;
+                }
+                .owl-next{
+                    float: right;
+                    margin-top: -5rem;
+                    margin-right: -1rem;
+                }
+            }
+        }
+    }
+
+    #social-lateral {
+        left: 0;
+        position: fixed;
+        top: 30%;
+        z-index: 999;
+        background: $white;
+        border-radius: 0px 20px 20px 0px;
+        box-shadow: 1px 2px 8px 1px #0000004f;
+        padding: 10px 13px;
+      
+        a {
+          i {
+            display: flex;
+            width: 20px;
+            height: 40px;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            transition: .2s;
+            @include responsive-font-size(21px);
+            color: #6C6659;
+            border-bottom: 1px solid #B4B4B4;
+      
+            &.fa-facebook {
+              color: #3B5998;
+            }
+      
+            &.fa-twitter {
+              color: #2CC0FE;
+            }
+      
+            &.fa-instagram {
+              color: #9339CA;
+            }
+      
+            &.fa-skype {
+              color: #00AFF0;
+              display: none;
+            }
+      
+            &.fa-whatsapp {
+              color: #4DCC5B;
+              display: none;
+              
+            }
+      
+            &.fa-youtube {
+              color: #C4302B;
+              display: none;
+            }
+      
+            &.fa-telegram {
+              color: rgb(80, 162, 233);
+              display: none;
+            }
+
+            &.fa-linkedin {
+                color: #3B5998;
+              display: none;
+            }
+          }
+      
+          &:last-child {
+            i {
+              border-bottom: 0;
+            }
+          }
+      
+          &:hover {
+            i {
+              @include responsive-font-size(22px);
+            }
+          }
+        }
+      
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+    }
+}

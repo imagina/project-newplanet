@@ -21,5 +21,7 @@ return [
     ],
     'validation' => [
     ],
-  'custom-featured-categories-home'=> "Categorías Destacadas Página de Inicio"
+  'custom-featured-categories-home'=> "Categorías Destacadas Página de Inicio",
+  'copyrightfooter' => 'Copyright © 2021 Todos Los Derechos Reservados',
+
 ];
