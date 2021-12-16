@@ -1,23 +1,27 @@
-<header >
+<header class="sticky-top">
+  <div class="container-fluid">
     <div class="container">
       <div class="row no-gutters align-items-center text-center px-lg-3">
-  
-        <div class="col-sm-3">
-            <x-isite::logo name="logo1" imgClasses="header-logo-1" />
+
+        <div class="col-auto text-center text-lg-left">
+          <div class="content-logo d-none d-xl-block">
+            <x-isite::logo name="logo1" />
+          </div>
+          <div class="content-logo d-block d-xl-none">
+            <x-isite::logo name="logo1" />
+          </div>
         </div>
             
-        <div class="col-sm-9 justify-content-end">
-            <x-isite::menu
-            id="mainMenu"
-            :withHome="false"
-            layout="category-menu-layout-2"
-            menuBefore="main"/>
-            @livewire('isearch::search', ["layout" => "search-layout-4"])
+        <div class="col text-right">
+          @include('partials.navigation')
         </div>
           
-          
+        <div class="col-auto">
+          @livewire('isearch::search', ["layout" => "search-layout-4"])
+        </div>
+  
       </div>
     </div>
-  </header>
-
+  </div>
+</header>
 <div id="social-lateral"><x-isite::social/></div> 

@@ -10,10 +10,6 @@
                 <div class="page-body">
                     {!! $page->body !!}
                 </div>
-                <div class="col-md-12">
-                    <x-media::gallery :mediaFiles="$page->mediaFiles()" :autoplay="false" :dots="false" :loop="true"
-                        :responsive="[300 => ['items' =>  1],700 => ['items' =>  2], 1024 => ['items' => 3]]" />
-                </div>
             </div>
 
         </div>

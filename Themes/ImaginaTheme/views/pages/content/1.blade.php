@@ -2,12 +2,12 @@
 
     @include('partials.slider-home')
 
-    @include('partials.services-products-carousel')
+    @include('partials.carousel-us-products')
 
-    @include('partials.services-notices-carousel')
+    @include('partials.carousel-noticies')
 
     <div class="container">
-        <hr class="rounded">
+        <hr class="solid">
     </div>
 
 </div>

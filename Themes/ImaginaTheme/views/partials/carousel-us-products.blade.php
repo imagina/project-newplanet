@@ -1,12 +1,13 @@
 {{--Category Products--}}
-<div id="servicesppCarousel">
-    <div class="py-5">
-        <x-isite::carousel.owl-carousel id="servicesppCarousel"
+<div id="section-nuestros-productos">
+    <div class="container pb-2">
+        <x-isite::carousel.owl-carousel 
+            id="carousel-us-products"
             repository="Modules\Iblog\Repositories\PostRepository"
             :params="['take' => 8,'filter' => ['order' => ['field' => 'created_at', 'way' => 'desc'],'categories' =>[10]]]"
-            :margin="10" 
+            :margin="20" 
             itemLayout="item-list-layout-1" 
-            :withSummary="false" 
+            :withSummary="true" 
             :withViewMoreButton="true"
             :autoplay="true" 
             :dots="false" 

@@ -1,14 +1,15 @@
 {{--Category Notices--}}
-<div id="Servicio">
-    <div class="py-5">
-        <x-isite::carousel.owl-carousel id="servicesp1Carousel"
+<div id="section-noticias">
+    <div class="container py-5">
+        <x-isite::carousel.owl-carousel 
+            id="carousel-noticies"
             repository="Modules\Iblog\Repositories\PostRepository"
             :params="['take' => 8,'filter' => ['order' => ['field' => 'created_at', 'way' => 'desc'],'categories' =>[11]]]"
-            :margin="10" 
+            :margin="20" 
             itemLayout="item-list-layout-1" 
             :withSummary="true" 
             :withViewMoreButton="true"
-            :autoplay="false" 
+            :autoplay="true" 
             :dots="false" 
             :loop="true" 
             title="Noticias" 
