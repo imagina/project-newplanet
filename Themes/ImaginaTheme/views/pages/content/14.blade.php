@@ -2,12 +2,12 @@
 
     <div class="page-content">
         <div class="container">
-
-            <x-media::single-image :isMedia="true" :mediaFiles="$page->mediaFiles()" />
-
+            
             <div class="row">
                 <h1>{{ $page->title }}</h1>
             </div>
+
+            <x-media::single-image :isMedia="true" :mediaFiles="$page->mediaFiles()" />
 
             <div class="row">
 
