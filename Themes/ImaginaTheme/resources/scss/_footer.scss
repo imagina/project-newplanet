@@ -1,131 +1,130 @@
 footer {
-  font-family: "Open Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
-  background-color: $bluePrimary;
-  padding: 0rem 24.9rem!important;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    background-color: $bluePrimary;
 
-  a {
-    color: $white;
-  }
-
-  a:hover {
-    color: $primary;
-  }
-
-  img {
-    width: 80%!important;
-    filter: contrast(0%) sepia(1) hue-rotate(20deg) saturate(0%)
-      brightness(200%);
-  }
-
-  .rounded {
-    border-top: 2px solid rgb(153 152 152 / 23%) !important;
-  }
-
-  .row {
-    margin: 0rem 0rem 1rem 0rem;
-
-    .col-md-3 {
-      margin: 3rem 0rem 1rem 0rem;
-    }
-
-    .col-md-4 {
-      margin: 3rem 0rem 1rem 0rem;
-      color: $white;
-
-      .row {
-
-        #componentContactAddresses{
-            padding: 0rem 7.9rem 0rem 0rem;
-        }
-
-        #componentContactPhones{
-            padding: 0rem 7rem 0rem 0rem;
-        }
-
-        div div i {
-            color: $white;
-            font-size: 20px;
-            padding: 0rem 0.5rem;
-          }
-      }
-    }
-
-    .col-md-12 #mainMenu #mainMenucontentToMove #mainMenunav .navbar-nav {
-      font-size: 12px;
-      justify-content: center;
-
-      .nav-item {
-        padding: 0rem 3rem 0rem 0rem;
-      }
-    }
-  }
-
-  svg {
-    filter: invert(1);
-    margin: -10px 15px 0px 0px;
-  }
-
-  .paintWhite {
-    color: $white;
-    margin-top: 6px;
-  }
-
-  .social-contact {
-    margin: -0.5rem 0rem 1rem 0rem!important;
     a {
-      i {
-        display: inline-flex;
-        width: 38px;
-        height: 38px;
-        margin: 5px;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        transition: 0.2s;
-        @include responsive-font-size(20px);
-        border: 1px solid $white !important;
-        background: #fff0;
-        color: #6c6659;
+      color: $white;
+    }
 
-        &.fa-facebook {
-          color: $white;
-        }
-        &.fa-twitter {
-          color: $white;
-        }
-        &.fa-instagram {
-          color: $white;
-        }
-        &.fa-skype {
-          color: $white;
-          background-color: #00aff0;
-          display: none;
-        }
-        &.fa-whatsapp {
-          color: $white;
-          background-color: #4dcc5b;
-          display: none;
-        }
-        &.fa-youtube {
-          color: $white;
-        }
-        &.fa-youtube-play {
-          color: $white;
-        }
-        &.fa-linkedin {
-          color: $white;
-          background-color: #c00;
-        }
+    a:hover {
+      color: $primary;
+    }
 
-        @include media-breakpoint-down(md) {
-          width: 30px;
-          height: 30px;
-          @include responsive-font-size(16px);
-        }
+    p {
+      color: $white;
+    }
 
-        border: 1px solid $primary;
+    i {
+      color: $white;
+    }
+
+    img {
+      width: 80%!important;
+      filter: contrast(0%) sepia(1) hue-rotate(20deg) saturate(0%)
+        brightness(200%);
+    }
+
+  .container-fluid .container{
+
+    .data {
+      padding-top: 50px;
+
+      .col-sm-4 {
+        margin-right: -24px;
+        .relative-position a picture img {
+          margin-left: 32px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .col-sm-3 .row {
+        margin-bottom: 12px;
+        color: $white;
       }
     }
-  }
-}
+
+    .row .col-sm-12 #mainMenu #mainMenucontentToMove #mainMenunav .nav {
+      justify-content: center;
+    }
+
+    .bottom-footer {
+      padding-bottom: 12px;
+      .col-sm-8 {
+        .logo-imagina a svg {
+          fill: $white;
+        }
+        p {
+          position: relative;
+          margin-top: -1.6rem;
+          margin-left: 8rem;
+        }
+      }
+      .social-contact {
+        text-align: right;
+        a {
+          i {
+            display: inline-flex;
+            width: 38px;
+            height: 38px;
+            margin: 5px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+            @include responsive-font-size(20px);
+            border: 1px solid $white !important;
+            background: #fff0;
+            color: #6c6659;
+  
+            &.fa-facebook {
+              color: $white;
+            }
+            &.fa-twitter {
+              color: $white;
+            }
+            &.fa-instagram {
+              color: $white;
+            }
+            &.fa-skype {
+              color: $white;
+              background-color: #00aff0;
+              display: none;
+            }
+            &.fa-whatsapp {
+              color: $white;
+              background-color: #4dcc5b;
+              display: none;
+            }
+            &.fa-youtube {
+              color: $white;
+            }
+            &.fa-youtube-play {
+              color: $white;
+            }
+            &.fa-linkedin {
+              color: $white;
+              background-color: #c00;
+            }
+  
+            @include media-breakpoint-down(md) {
+              width: 30px;
+              height: 30px;
+              @include responsive-font-size(16px);
+            }
+  
+            border: 1px solid $primary;
+          }
+        }
+      }
+    }
+
+    .solid {
+      border-top: 1px solid rgb(255 253 253 / 10%);
+    }
+      
+
+  } // END-CONTAINER-FLUID
+
+
+} // END-FOOTER

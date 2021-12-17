@@ -11,7 +11,7 @@
         owlBlockStyle="owl-style-4"
         :autoplay="false" 
         :dots="false" 
-        :loop="true" 
+        :loop="false" 
         title="Nuestros" 
         subTitle="Productos"
         :navText="['<i class=\'fa fa-angle-left\'></i>','<i class=\'fa fa fa-angle-right\'></i>']"

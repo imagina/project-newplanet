@@ -1,3 +1,5 @@
+{{-- Page Contact --}}
+
 <div class="page page-{{ $page->id }}">
 
     <div class="page-content">

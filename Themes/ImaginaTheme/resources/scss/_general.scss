@@ -141,7 +141,6 @@ body {
             }
 
             .item-view-more-button {
-              margin-left: -4rem;
               text-align: right;
               margin-bottom: 3rem;
 
@@ -153,7 +152,7 @@ body {
               a:before{
                 font-family: "FontAwesome";
                 content: "";
-                left: 20.7rem;
+                right: 2.4rem;
                 position: absolute;
                 color: #ffffff;
                 background-color: #e7862e;
@@ -215,7 +214,8 @@ body {
     #carousel-noticiesCarousel .owl-stage-outer .owl-stage .owl-item .item-layout .card .row {
 
         .item-image{
-          height: 250px;
+          height: auto;
+          margin-bottom: 20px;
 
           a img {
             border-radius: 20px;
@@ -236,18 +236,17 @@ body {
         }
 
         .item-view-more-button {
-          margin-left: -4rem;
           text-align: right;
 
           a {
             color: $primary;
             float: right;
-            margin-right: -2rem;
+            margin-right: 2rem;
           }
-          a:before{
+          a:after{
             font-family: "FontAwesome";
             content: "";
-            left: 19.7rem;
+            right: 2.4rem;
             position: absolute;
             color: #ffffff;
             background-color: #e7862e;
@@ -283,21 +282,25 @@ body {
     }
 
     #carousel-sponsorsCarousel {
-      .owl-stage-outer .owl-stage .owl-item .item-layout .card .row .item-title{
-        display: none;
-      }
-      .owl-nav {
-        font-size: 20px;
-        color: $gray-400;
-        .owl-prev {
-          float: left;
-          margin-top: -5rem;
-          margin-left: -1rem;
+      .owl-stage-outer .owl-stage .owl-item 
+      {
+        width: 165px!important;
+        .item-layout .card .row .item-title{
+          display: none;
         }
-        .owl-next{
-          float: right;
-          margin-top: -5rem;
-          margin-right: -1rem;
+        .owl-nav {
+          font-size: 20px;
+          color: $gray-400;
+          .owl-prev {
+            float: left;
+            margin-top: -5rem;
+            margin-left: -1rem;
+          }
+          .owl-next{
+            float: right;
+            margin-top: -5rem;
+            margin-right: -1rem;
+          }
         }
       }
     }
@@ -388,6 +391,9 @@ body {
       h1 {
         margin: 0rem 0rem 1rem 0rem;
         color: $bluePrimary;
+      }
+      .page-body {
+        padding: 0rem 1rem;
       }
     }
     picture img {
@@ -481,21 +487,8 @@ body {
     }
   }
 
-  // // Small devices (landscape phones, 414px and up)
-  // @media (min-width: 414px) { 
-  //   width: 795px;
-  // }
-
-  // // Small devices (landscape phones, 576px and up)
-  // @media (min-width: 576px) {  }
-
-  // // Medium devices (tablets, 768px and up)
-  // @media (min-width: 768px) {  }
-
-  // // Large devices (desktops, 992px and up)
-  // @media (min-width: 992px) {  }
-
-  // // Extra large devices (large desktops, 1200px and up)
-  // @media (min-width: 1200px) {  }
+  .modal-backdrop {
+    z-index: 0!important;
+  }
 
 }
