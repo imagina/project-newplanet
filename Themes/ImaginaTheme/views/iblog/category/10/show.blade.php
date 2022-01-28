@@ -13,31 +13,31 @@
     <div class="container py-3">
       <div class="container">
         <div class="row justify-content-center">
-            <div class="col-10">
-                <div class="row">
-                    <h1>{{ $post->title }}</h1>
+          <div class="col-10">
+            <div class="row">
+              <h1>{{ $post->title }}</h1>
 
-                    <div class="col-xs-12">
-                        <div class="bgimg">
-                            <img class="image img-responsive" src="{{url($post->mainimage->path)}}"
-                                 alt="{{$post->title}}"/>
-                        </div>
-                    </div>
+              <div class="col-xs-12">
+                <div class="bgimg">
+                  <img class="image img-responsive" src="{{url($post->mainimage->path)}}"
+                       alt="{{$post->title}}"/>
                 </div>
+              </div>
             </div>
-            <div class="col-lg-10">
-                <div class="page-body">
-                    {!! $post->description !!} 
-                </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="page-body">
+              {!! $post->description !!}
             </div>
+          </div>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
-    <div class="col-12">
-        @include('iblog.gallery.viewline') 
-        
-    </div>
+  <div class="col-12">
+    @include('iblog.gallery.viewline')
+
+  </div>
 
 @stop
 @section('scripts')

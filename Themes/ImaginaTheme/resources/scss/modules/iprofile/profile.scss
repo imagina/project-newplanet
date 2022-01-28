@@ -10,7 +10,7 @@
   .profile-section-title{
     margin-top: 22px;
   }
- 
+
   label[for=extraFieldmainImage]{
     display: none;
   }
@@ -25,10 +25,9 @@
   }
   @include media-breakpoint-down(sm) {
     .profile-content {
-      margin-left: 40px;
-      padding-right: 55px !important;
+      padding-left: 45px;
     }
-  
+
     #breadcrumbSection {
       margin-left: 40px;
     }
