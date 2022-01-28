@@ -1,37 +1,37 @@
 footer {
-    font-family: "Open Sans", sans-serif;
-    font-family: "Poppins", sans-serif;
-    background-color: $bluePrimary;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: $bluePrimary;
 
-    a {
-      color: $white;
-    }
+  a {
+    color: $white;
+  }
 
-    a:hover {
-      color: $primary;
-    }
+  a:hover {
+    color: $primary;
+  }
 
-    p {
-      color: $white;
-    }
+  p {
+    color: $white;
+  }
 
-    i {
-      color: $white;
-    }
+  i {
+    color: $white;
+  }
 
-    img {
-      width: 80%!important;
-      filter: contrast(0%) sepia(1) hue-rotate(20deg) saturate(0%)
-        brightness(200%);
-    }
+  img {
+    width: 80% !important;
+    filter: contrast(0%) sepia(1) hue-rotate(20deg) saturate(0%) brightness(200%);
+  }
 
-  .container-fluid .container{
+  .container-fluid .container {
 
     .data {
       padding-top: 50px;
 
       .col-sm-4 {
         margin-right: -24px;
+
         .relative-position a picture img {
           margin-left: 32px;
           margin-bottom: 20px;
@@ -50,18 +50,22 @@ footer {
 
     .bottom-footer {
       padding-bottom: 12px;
+
       .col-sm-8 {
         .logo-imagina a svg {
           fill: $white;
         }
+
         p {
           position: relative;
           margin-top: -1.6rem;
           margin-left: 8rem;
         }
       }
+
       .social-contact {
         text-align: right;
+
         a {
           i {
             display: inline-flex;
@@ -76,43 +80,48 @@ footer {
             border: 1px solid $white !important;
             background: #fff0;
             color: #6c6659;
-  
+
             &.fa-facebook {
               color: $white;
             }
+
             &.fa-twitter {
               color: $white;
             }
+
             &.fa-instagram {
               color: $white;
             }
+
             &.fa-skype {
               color: $white;
               background-color: #00aff0;
-              display: none;
             }
+
             &.fa-whatsapp {
               color: $white;
               background-color: #4dcc5b;
-              display: none;
             }
+
             &.fa-youtube {
               color: $white;
             }
+
             &.fa-youtube-play {
               color: $white;
             }
+
             &.fa-linkedin {
               color: $white;
               background-color: #c00;
             }
-  
+
             @include media-breakpoint-down(md) {
               width: 30px;
               height: 30px;
               @include responsive-font-size(16px);
             }
-  
+
             border: 1px solid $primary;
           }
         }
@@ -122,9 +131,13 @@ footer {
     .solid {
       border-top: 1px solid rgb(255 253 253 / 10%);
     }
-      
-
-  } // END-CONTAINER-FLUID
 
 
-} // END-FOOTER
+  }
+
+  // END-CONTAINER-FLUID
+
+
+}
+
+// END-FOOTER

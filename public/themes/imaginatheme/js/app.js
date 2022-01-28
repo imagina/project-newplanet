@@ -53146,9 +53146,9 @@ window.owlCarousel = __webpack_require__(/*! owl.carousel */ "./node_modules/owl
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/imaginadev/webapps/blog-base/icms/Themes/ImaginaTheme/resources/js/main.js */"./resources/js/main.js");
-__webpack_require__(/*! /home/imaginadev/webapps/blog-base/icms/Themes/ImaginaTheme/resources/scss/main.scss */"./resources/scss/main.scss");
-module.exports = __webpack_require__(/*! /home/imaginadev/webapps/blog-base/icms/Themes/ImaginaTheme/resources/scss/secondary.scss */"./resources/scss/secondary.scss");
+__webpack_require__(/*! /home/newplanet/webapps/dev-newplanet/icms/Themes/ImaginaTheme/resources/js/main.js */"./resources/js/main.js");
+__webpack_require__(/*! /home/newplanet/webapps/dev-newplanet/icms/Themes/ImaginaTheme/resources/scss/main.scss */"./resources/scss/main.scss");
+module.exports = __webpack_require__(/*! /home/newplanet/webapps/dev-newplanet/icms/Themes/ImaginaTheme/resources/scss/secondary.scss */"./resources/scss/secondary.scss");
 
 
 /***/ })

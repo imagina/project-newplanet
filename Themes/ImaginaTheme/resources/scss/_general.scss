@@ -8,7 +8,7 @@ body {
     text-decoration: none;
   }
 
-  a:hover{
+  a:hover {
     color: $bluePrimary;
     text-decoration: underline;
   }
@@ -21,17 +21,20 @@ body {
 
       .row .col-10 {
         padding: 0rem 5rem 0rem 0rem;
-        a h1{
+
+        a h1 {
           text-align: left;
           color: white;
           font-size: 2rem;
           font-weight: lighter;
         }
+
         .custom-html p {
-          font-size: 3.2rem!important;
+          font-size: 3.2rem !important;
           text-align: left;
           font-weight: bold;
         }
+
         .d-block {
           a {
             height: 35px;
@@ -43,12 +46,14 @@ body {
             background-color: white;
             border-color: white;
           }
+
           .a:hover {
-            color: $white!important;
+            color: $white !important;
             background-color: $gray-900;
             border-color: $gray-900;
           }
-          a:before{
+
+          a:before {
             font-family: "FontAwesome";
             content: "";
             left: 4.9rem;
@@ -67,19 +72,22 @@ body {
   #section-nuestros-productos {
     #carousel-us-products .container .row .col-12 {
       background-color: $grayBackground;
-      .title-section{
-        .title{
+
+      .title-section {
+        .title {
           font-size: 1.3rem;
           margin: 0rem 0rem 0rem 0.5rem;
         }
-        &::before{
+
+        &::before {
           content: "-";
           position: absolute;
           color: #e7862e;
           font-size: 60px;
           margin: -2rem 0rem 0rem -2rem;
         }
-        .subtitle{
+
+        .subtitle {
           font-size: 2rem;
           color: $bluePrimary;
           font-weight: bold;
@@ -90,11 +98,12 @@ body {
       #carousel-us-productsCarousel {
         .owl-stage-outer .owl-stage .owl-item .item-layout .card {
           background-color: $grayBackground;
+
           .row {
 
             background-color: $grayBackground;
 
-            .item-image{
+            .item-image {
 
               a {
                 height: 280px;
@@ -108,15 +117,16 @@ body {
                 margin: 0 auto;
 
                 img {
-                  width: 90%!important;
+                  width: 90% !important;
                   height: 90%;
                 }
 
-              } 
+              }
             }
 
             .item-title {
               height: 100px;
+
               a h3 {
                 text-align: center;
                 font-weight: bold;
@@ -129,7 +139,8 @@ body {
 
             .item-summary {
               height: 100px;
-              display: block!important;
+              display: block !important;
+
               a .summary {
                 color: $gray-700;
               }
@@ -144,7 +155,8 @@ body {
                 float: right;
                 margin-right: 2rem;
               }
-              a:before{
+
+              a:before {
                 font-family: "FontAwesome";
                 content: "";
                 right: 2.4rem;
@@ -158,24 +170,28 @@ body {
               }
             }
           }
-        } 
+        }
 
         .owl-nav {
           font-size: 20px;
+
           .owl-prev {
             float: left;
             margin-top: -5rem;
             margin-left: 2rem;
             font-size: 35px;
+
             i {
               color: $gray-500
             }
           }
-          .owl-next{
+
+          .owl-next {
             float: right;
             margin-top: -5rem;
             margin-right: 2rem;
             font-size: 35px;
+
             i {
               color: $gray-500
             }
@@ -185,7 +201,7 @@ body {
     }
   }
 
-  #section-nuestros-productos:before{
+  #section-nuestros-productos:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -199,19 +215,21 @@ body {
   }
 
   #section-noticias #carousel-noticies .container .row .col-12 {
-    .title-section{
-      .title{
+    .title-section {
+      .title {
         font-size: 1.3rem;
         margin: 0rem 0rem 0rem 0.5rem;
       }
-      &::before{
+
+      &::before {
         content: "-";
         position: absolute;
         color: #e7862e;
         font-size: 60px;
         margin: -2rem 0rem 0rem -2rem;
       }
-      .subtitle{
+
+      .subtitle {
         font-size: 2rem;
         color: $bluePrimary;
         font-weight: bold;
@@ -221,67 +239,71 @@ body {
 
     #carousel-noticiesCarousel .owl-stage-outer .owl-stage .owl-item .item-layout .card .row {
 
-        .item-image{
-          height: auto;
-          margin-bottom: 20px;
+      .item-image {
+        height: auto;
+        margin-bottom: 20px;
 
-          a img {
-            border-radius: 20px;
-          }
+        a img {
+          border-radius: 20px;
+        }
+      }
+
+      .item-title {
+        height: 40px;
+
+        a h3 {
+          font-weight: bold;
+          color: $gray-600;
+          font-size: 1rem;
+        }
+      }
+
+      .item-summary {
+        height: 100px;
+      }
+
+      .item-view-more-button {
+        text-align: right;
+
+        a {
+          color: $primary;
+          float: right;
+          margin-right: 2rem;
         }
 
-        .item-title {
-          height: 40px;
-          a h3 {
-            font-weight: bold;
-            color: $gray-600;
-            font-size: 1rem;
-          }
+        a:after {
+          font-family: "FontAwesome";
+          content: "";
+          right: 2.4rem;
+          position: absolute;
+          color: #ffffff;
+          background-color: #e7862e;
+          border-radius: 50%;
+          width: 5%;
+          font-size: 12px;
+          margin-top: 0.15rem;
         }
-
-        .item-summary {
-          height: 100px;
-        }
-
-        .item-view-more-button {
-          text-align: right;
-
-          a {
-            color: $primary;
-            float: right;
-            margin-right: 2rem;
-          }
-          a:after{
-            font-family: "FontAwesome";
-            content: "";
-            right: 2.4rem;
-            position: absolute;
-            color: #ffffff;
-            background-color: #e7862e;
-            border-radius: 50%;
-            width: 5%;
-            font-size: 12px;
-            margin-top: 0.15rem;
-          }
-        }
+      }
 
     }
   }
 
   #section-marcas-comerciales #carousel-sponsors .container .row .col-12 {
-    .title-section{
-      .title{
+    .title-section {
+      .title {
         font-size: 1.3rem;
         margin: 0rem 0rem 0rem 0.5rem;
       }
-      &::before{
+
+      &::before {
         content: "-";
         position: absolute;
         color: #e7862e;
         font-size: 60px;
         margin: -2rem 0rem 0rem -2rem;
       }
-      .subtitle{
+
+      .subtitle {
         font-size: 2rem;
         color: $bluePrimary;
         font-weight: bold;
@@ -290,21 +312,24 @@ body {
     }
 
     #carousel-sponsorsCarousel {
-      .owl-stage-outer .owl-stage .owl-item 
-      {
-        width: 165px!important;
-        .item-layout .card .row .item-title{
+      .owl-stage-outer .owl-stage .owl-item {
+        width: 165px !important;
+
+        .item-layout .card .row .item-title {
           display: none;
         }
+
         .owl-nav {
           font-size: 20px;
           color: $gray-400;
+
           .owl-prev {
             float: left;
             margin-top: -5rem;
             margin-left: -1rem;
           }
-          .owl-next{
+
+          .owl-next {
             float: right;
             margin-top: -5rem;
             margin-right: -1rem;
@@ -315,83 +340,73 @@ body {
   }
 
   #social-lateral {
-      left: 0;
-      position: fixed;
-      top: 30%;
-      z-index: 999;
-      background: $white;
-      border-radius: 0px 20px 20px 0px;
-      box-shadow: 1px 2px 8px 1px #0000004f;
-      padding: 10px 13px;
-    
-      a {
-        i {
-          display: flex;
-          width: 20px;
-          height: 40px;
-          position: relative;
-          align-items: center;
-          justify-content: center;
-          transition: .2s;
-          @include responsive-font-size(21px);
-          color: #6C6659;
-          border-bottom: 1px solid #B4B4B4;
-    
-          &.fa-facebook {
-            color: #3B5998;
-          }
-    
-          &.fa-twitter {
-            color: #2CC0FE;
-          }
-    
-          &.fa-instagram {
-            color: #9339CA;
-          }
-    
-          &.fa-skype {
-            color: #00AFF0;
-            display: none;
-          }
-    
-          &.fa-whatsapp {
-            color: #4DCC5B;
-            display: none;
-            
-          }
-    
-          &.fa-youtube {
-            color: #C4302B;
-            display: none;
-          }
-    
-          &.fa-telegram {
-            color: rgb(80, 162, 233);
-            display: none;
-          }
+    left: 0;
+    position: fixed;
+    top: 30%;
+    z-index: 999;
+    background: $white;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 1px 2px 8px 1px #0000004f;
+    padding: 10px 13px;
 
-          &.fa-linkedin {
-              color: #3B5998;
-            display: none;
-          }
+    a {
+      i {
+        display: flex;
+        width: 20px;
+        height: 40px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        transition: .2s;
+        @include responsive-font-size(21px);
+        color: #6C6659;
+        border-bottom: 1px solid #B4B4B4;
+
+        &.fa-facebook {
+          color: #3B5998;
         }
-    
-        &:last-child {
-          i {
-            border-bottom: 0;
-          }
+
+        &.fa-twitter {
+          color: #2CC0FE;
         }
-    
-        &:hover {
-          i {
-            @include responsive-font-size(22px);
-          }
+
+        &.fa-instagram {
+          color: #9339CA;
+        }
+
+        &.fa-skype {
+          color: #00AFF0;
+        }
+
+        &.fa-whatsapp {
+          color: #4DCC5B;
+        }
+
+        &.fa-youtube {
+          color: #C4302B;
+        }
+
+        &.fa-telegram {
+          color: rgb(80, 162, 233);
+        }
+
+        &.fa-linkedin {
+          color: #3B5998;
         }
       }
-    
-      @include media-breakpoint-down(sm) {
-        display: none;
+
+      &:last-child {
+        i {
+          border-bottom: 0;
+        }
       }
+
+      &:hover {
+        i {
+          @include responsive-font-size(22px);
+        }
+      }
+    }
   }
 
   .page-12 .page-content .container {
@@ -400,10 +415,12 @@ body {
         margin: 0rem 0rem 1rem 0rem;
         color: $bluePrimary;
       }
+
       .page-body {
         padding: 0rem 1rem;
       }
     }
+
     picture img {
       margin-bottom: 2rem;
     }
@@ -415,11 +432,13 @@ body {
         margin: 0rem 0rem 1rem 0rem;
         color: $bluePrimary;
       }
+
       .col-md-12 .content-formcontacto #contacto .form-group .col-sm-12 button {
         color: $white;
         border-radius: 20px;
       }
     }
+
     picture img {
       margin-bottom: 2rem;
     }
@@ -430,8 +449,9 @@ body {
 
     .item-layout .card .row {
 
-      .item-image{
+      .item-image {
         height: 200px;
+
         a img {
           max-height: 200px;
           border-radius: 20px;
@@ -440,32 +460,34 @@ body {
 
       .item-title {
         height: 80px;
+
         a h3 {
           font-size: 1.5rem;
           font-weight: bold;
           padding: 0.5rem 0rem;
         }
       }
-  
+
       .item-created-date {
         display: none;
       }
-  
-      .item-summary{
+
+      .item-summary {
         height: 100px;
         margin-top: 1.4rem;
       }
-  
+
       .item-view-more-button {
         a {
           float: right;
           color: $primary;
         }
+
         a:hover {
-          color: $white!important;
+          color: $white !important;
           background-color: $gray-900;
           border-color: $gray-900;
-      }
+        }
       }
     }
   }
@@ -476,6 +498,7 @@ body {
       color: $bluePrimary;
       font-weight: bold;
     }
+
     .col-xs-12 .bgimg img {
       width: 100%;
       margin-bottom: 2rem;
@@ -483,20 +506,23 @@ body {
   }
 
   .col-12 #galleryCarousel {
-    background-color: $grayBackground ;
+    background-color: $grayBackground;
+
     .owl-stage-outer {
       padding: 2rem 0rem 0rem 0rem;
+
       .owl-stage .owl-item .item {
         height: 21.7rem;
+
         a picture img {
           height: 100%;
         }
-      } 
+      }
     }
   }
 
   .modal-backdrop {
-    z-index: 0!important;
+    z-index: 0 !important;
   }
 
 }
