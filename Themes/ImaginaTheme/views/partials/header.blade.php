@@ -11,17 +11,17 @@
             <x-isite::logo name="logo1" />
           </div>
         </div>
-            
+
         <div class="col text-right">
           @include('partials.navigation')
         </div>
-          
+
         <div class="col-auto">
-          @livewire('isearch::search', ["layout" => "search-layout-4"])
+          @livewire('isearch::search', ["layout" => "search-layout-1"])
         </div>
-  
+
       </div>
     </div>
   </div>
 </header>
-<div id="social-lateral"><x-isite::social/></div> 
+<div id="social-lateral"><x-isite::social/></div>
