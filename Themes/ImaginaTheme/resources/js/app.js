@@ -6,20 +6,13 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
-window.toastr = require('toastr');
 window.axios = require('axios');
-window.VueCarousel = require('vue-carousel');
-window.Vuelidate = require('vuelidate');
-window.validators = require('vuelidate/lib/validators');
-window.Vue.use(window.Vuelidate.default)
 
-import Vue from 'vue';
+
 import axios from 'axios';
-import toastr from 'toastr';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
-window.bus = new Vue();
+
 
 //sweetalert2 for livewire alerts
 // CommonJS

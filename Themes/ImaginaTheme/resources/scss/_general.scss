@@ -6,6 +6,10 @@ body {
   a {
     color: $black;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: none !important;
+    }
   }
 
   a:hover {
@@ -13,59 +17,69 @@ body {
     text-decoration: underline;
   }
 
-  #SliderHome .auto {
-    background-color: $grayBackground;
+  #SliderHome {
+    .auto {
+      background-color: $grayBackground;
 
-    .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .carousel-caption .container {
-      margin: 3rem 0rem 0rem -4rem;
-
-      .row .col-10 {
-        padding: 0rem 5rem 0rem 0rem;
-
-        a h1 {
-          text-align: left;
-          color: white;
-          font-size: 2rem;
-          font-weight: lighter;
+      #home {
+        height: 38vw !important;
+        @include media-breakpoint-down(sm) {
+          height: 65vw !important;
         }
+      }
 
-        .custom-html p {
-          font-size: 3.2rem !important;
-          text-align: left;
-          font-weight: bold;
-        }
+      .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .carousel-caption .container {
+        margin: 3rem 0rem 0rem -4rem;
 
-        .d-block {
-          a {
-            height: 35px;
-            float: left;
-            border-radius: 20px;
-            width: 130px;
-            padding: 6px 26px 0px 0px;
-            color: $bluePrimary;
-            background-color: white;
-            border-color: white;
+        .row .col-10 {
+          padding: 0rem 5rem 0rem 0rem;
+
+          a h1 {
+            text-align: left;
+            color: white;
+            font-size: 2rem;
+            font-weight: lighter;
           }
 
-          .a:hover {
-            color: $white !important;
-            background-color: $gray-900;
-            border-color: $gray-900;
+          .custom-html p {
+            font-size: 3.2rem !important;
+            text-align: left;
+            font-weight: bold;
           }
 
-          a:before {
-            font-family: "FontAwesome";
-            content: "";
-            left: 4.9rem;
-            position: absolute;
-            color: $bluePrimary;
-            border-radius: 50%;
-            width: 5%;
-            font-size: 14px;
-            margin-top: 0.1rem;
+          .d-block {
+            a {
+              height: 35px;
+              float: left;
+              border-radius: 20px;
+              width: 130px;
+              padding: 6px 26px 0px 0px;
+              color: $bluePrimary;
+              background-color: white;
+              border-color: white;
+            }
+
+            .a:hover {
+              color: $white !important;
+              background-color: $gray-900;
+              border-color: $gray-900;
+            }
+
+            a:before {
+              font-family: "FontAwesome";
+              content: "";
+              left: 4.9rem;
+              position: absolute;
+              color: $bluePrimary;
+              border-radius: 50%;
+              width: 5%;
+              font-size: 14px;
+              margin-top: 0.1rem;
+            }
           }
         }
       }
+
     }
   }
 
@@ -245,11 +259,13 @@ body {
 
         a img {
           border-radius: 20px;
+          height: 150px;
+          object-fit: cover;
         }
       }
 
       .item-title {
-        height: 40px;
+        height: 56px;
 
         a h3 {
           font-weight: bold;
@@ -433,7 +449,7 @@ body {
         color: $bluePrimary;
       }
 
-      .col-md-12 .content-formcontacto #contacto .form-group .col-sm-12 button {
+      .col-md-12 .content-formcontactanos #contactanos .form-group .col-sm-12 button {
         color: $white;
         border-radius: 20px;
       }
@@ -450,21 +466,24 @@ body {
     .item-layout .card .row {
 
       .item-image {
-        height: 200px;
 
         a img {
-          max-height: 200px;
           border-radius: 20px;
+          height: 190px;
+          object-fit: cover;
         }
       }
 
       .item-title {
-        height: 80px;
+        //height: 80px;
 
         a h3 {
-          font-size: 1.5rem;
+          font-size: 21px;
           font-weight: bold;
           padding: 0.5rem 0rem;
+          @include media-breakpoint-down(md) {
+            font-size: 17px;
+          }
         }
       }
 
@@ -473,8 +492,10 @@ body {
       }
 
       .item-summary {
-        height: 100px;
-        margin-top: 1.4rem;
+        //margin-top: 1.4rem;
+        @include media-breakpoint-down(md) {
+          line-height: 1;
+        }
       }
 
       .item-view-more-button {
@@ -497,6 +518,12 @@ body {
       margin: 0rem 0rem 1rem 0rem;
       color: $bluePrimary;
       font-weight: bold;
+      @include media-breakpoint-down(md) {
+        font-size: 34px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 30px;
+      }
     }
 
     .col-xs-12 .bgimg img {

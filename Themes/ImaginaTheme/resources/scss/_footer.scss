@@ -1,7 +1,7 @@
 footer {
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
-  background-color: $bluePrimary;
+  background-color: $secondary;
 
   a {
     color: $white;
@@ -20,7 +20,7 @@ footer {
   }
 
   img {
-    width: 80% !important;
+    width: 260px !important;
     filter: contrast(0%) sepia(1) hue-rotate(20deg) saturate(0%) brightness(200%);
   }
 
@@ -135,9 +135,41 @@ footer {
 
   }
 
-  // END-CONTAINER-FLUID
+  #mainMenucontentToMove{
+    .navbar-nav{
+      .nav-item {
+        position: relative;
 
+        &.dropdown {
+          .dropdown-menu {
+            padding: 15px;
+            width: 306px;
+            position: absolute;
+            will-change: transform;
+            top: 0px;
+            left: 0px;
+            transform: translate3d(0px, -105%, 0px);
 
+            .nav-item {
+              .nav-link {
+                padding: 4px 0px;
+                color: $secondary;
+              }
+            }
+
+            @include media-breakpoint-down(md) {
+              position: sticky !important;
+              transform: none !important;
+              width: 100%;
+              .nav-link {
+                border-right: 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // END-FOOTER
